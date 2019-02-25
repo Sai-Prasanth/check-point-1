@@ -22,13 +22,13 @@ Test Case 1:
 void isPerfect(long input[], int output[], int length)
 {   int i,count;
 long int j;
-for(i=0;i<lenght;i++)
+for(i=0;i<length;i++)
 {
 	count=1;
 	for(j=2;j<input[i]/2;j++)
 	{
 		if(input[i]%j==0)
-		count++;
+		count=count+j;
 	}
 	if(input[i]==count)
 	{
